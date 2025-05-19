@@ -1,176 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devyani Mukherjee - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    .underline-accent {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #a94442;
+      margin: 6px auto 0;
+      border-radius: 4px;
+    }
+
+         .skill-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  .skill-group {
+    margin-bottom: 32px;
+  }
+
+  .skill-label {
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .skill-bar {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 9999px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-fill {
+    height: 100%;
+    background-color: #a94442;
+    border-radius: 9999px;
+  }
+
+  .skill-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 2px solid #a94442;
+    border-radius: 50%;
+  }
+    </style>
 </head>
+
 <body>
 
+
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">Devyani Mukherjee</div>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
-        </nav>
-    </header>
+    <section class="parent">
+        <header class="navbar">
+            <div class="logo">Devyani Mukherjee</div>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contacts</a>
+            </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay">
-            <h2>UI/UX DESIGN</h2>
-            <h1>PORTFOLIO</h1>
-        </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="overlay">
+                <h2>UI/UX DESIGN</h2>
+                <h1>PORTFOLIO</h1>
+            </div>
+        </section>
+        
     </section>
+        <!-- About Section -->
+        <section class="about">
+            <div class="text">
+                <h4>UI/UX DESIGNER</h4>
+                <h2>Hello, my name is <br> <span>Devyani Mukherjee</span></h2>
+                <p>
+                    I am a 20 years old UI/UX Designer, and currently pursuing my Bachelor's in Designing course in UI/UX
+                    Design.
+                I believe great design is more than just aesthetics—it's about creating seamless experiences that make
+                people’s lives easier and more enjoyable.<br><br>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="text">
-            <h4>UI/UX DESIGNER</h4>
-            <h2>Hello, my name is <br> <span>Devyani Mukherjee</span></h2>
-            <p>
-                I am a 20 years old UI/UX Designer, and currently pursuing my Bachelor's in Designing course in UI/UX Design.
-                I believe great design is more than just aesthetics—it's about creating seamless experiences that make people’s lives easier and more enjoyable.<br><br>
+                While studying in Sushant University I have completed numerous projects in UI/UX design and while doing
+                so I have gained varied experience in UX research, wireframing, prototyping, and UI design.<br><br>
 
-                While studying in Sushant University I have completed numerous projects in UI/UX design and while doing so I have gained varied experience in UX research, wireframing, prototyping, and UI design.<br><br>
-
-                I believe in a user-centered approach, where design decisions are driven by data, empathy, and usability testing, to ensure the best experience for end users.<br><br>
+                I believe in a user-centered approach, where design decisions are driven by data, empathy, and usability
+                testing, to ensure the best experience for end users.<br><br>
 
                 Take a look at my portfolio, and feel free to reach out if you'd like to collaborate.
             </p>
             <div class="buttons">
                 <a href="#" class="btn">Projects</a>
-                <a href="#" class="btn-outline">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/devyani-mukherjee-a490b1345/" class="btn-outline">LinkedIn</a>
             </div>
         </div>
         <div class="image">
-            <img src="profile.png" alt="Devyani Mukherjee">
+            <img src="./Images/Screenshot 2025-05-14 122553.png" alt="Devyani Mukherjee">
         </div>
     </section>
 
     <!-- Skills Section -->
-<section class="skills">
-  <h2>My Skills</h2>
-  <div class="skill">
-      <span>UX</span>
-      <input type="range" value="90" disabled>
-  </div>
-  <div class="skill">
-      <span>Website Design</span>
-      <input type="range" value="80" disabled>
-  </div>
-  <div class="skill">
-      <span>App Design</span>
-      <input type="range" value="85" disabled>
-  </div>
-  <div class="skill">
-      <span>Graphic Design</span>
-      <input type="range" value="75" disabled>
-  </div>
-</section>
+<section class="py-20 text-center bg-gray-50">
+ <h2 class="skills-heading">My Skills</h2>
 
-<!-- Services Section -->
-<section class="services">
-  <h2>Services</h2>
-  <p class="services-intro">
-      I offer end-to-end UX/UI design services, including user research, wireframing, prototyping, and usability testing to create seamless experiences. My expertise in UI design ensures visually appealing, responsive, and consistent interfaces. I also specialize in product design and redesigns to enhance user engagement. With a strong focus on accessibility and collaboration, I work closely with developers to bring intuitive digital products to life.
-  </p>
+  <div class="skill-container">
 
-  <div class="service-cards">
-      <div class="card">
-          <h4>UX Design –</h4>
-          <p>User research, wireframing, prototyping, and usability testing for seamless experiences.</p>
+    <div class="skill-group">
+      <div class="skill-label">UX</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 95%;"></div>
+        <div class="skill-thumb" style="left: 100%;"></div>
       </div>
-      <div class="card">
-          <h4>UI Design –</h4>
-          <p>Visually appealing interfaces, responsive layouts, and design systems.</p>
-      </div>
-      <div class="card">
-          <h4>Product Design –</h4>
-          <p>Web & mobile app design and redesigns for better engagement.</p>
-      </div>
-      <div class="card">
-          <h4>Collaboration –</h4>
-          <p>Developer handoff, accessibility, and inclusive design best practices.</p>
-      </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section class="projects">
-    <h2>My Projects</h2>
-    <div class="project-filters">
-        <button class="active">All</button>
-        <button>UI/UX</button>
-        <button>Web Design</button>
-        <button>App Design</button>
-        <button>Graphic Design</button>
     </div>
 
-    <div class="project-cards">
-        <div class="project-card">
-            <img src="path-to-your-image1.jpg" alt="Accessibility Project">
-            <h4>Enhanced Accessibility for visually impaired users in Indian Railways</h4>
-            <p>Problem: Users faced issues in travel accessibility. Solution: Proposing solutions to improve user journey experiences.</p>
-        </div>
-        <div class="project-card">
-            <img src="path-to-your-image2.jpg" alt="Content Writer Project">
-            <h4>Service design for Content Writer</h4>
-            <p>Project description: Understanding service ecosystems for freelance content writers and service design improvements.</p>
-        </div>
-        <div class="project-card">
-            <img src="path-to-your-image3.jpg" alt="Tiffin Service Project">
-            <h4>Service design - Tiffin Service</h4>
-            <p>Project description: Redesigning the tiffin service experience for better efficiency and satisfaction.</p>
-        </div>
+    <div class="skill-group">
+      <div class="skill-label">Website Design</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 85%;"></div>
+        <div class="skill-thumb" style="left: 100%;"></div>
+      </div>
     </div>
 
-    <button class="other-projects-btn">Other Projects</button>
-</section>
-
-<!-- Testimonials Section -->
-<section class="testimonials">
-    <h2>Testimonials</h2>
-    <p class="testimonials-intro">
-        Trusted for creating intuitive, user-friendly designs that enhance engagement and usability.  
-        See what trainers and colleagues say about our collaborations!
-    </p>
-
-    <div class="testimonial-card">
-        <img src="path-to-testimonial-image.jpg" alt="User Photo">
-        <blockquote>“Devyani Mukherjee has successfully completed the UX/UI developer trainee at Silver Touch Technologies Ltd.”</blockquote>
-        <p><strong>Company</strong><br>Silver Touch Technologies Ltd</p>
+    <div class="skill-group">
+      <div class="skill-label">App Design</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 90%;"></div>
+        <div class="skill-thumb" style="left: 100%;"></div>
+      </div>
     </div>
-</section>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p class="contact-intro">
-      Got a project in mind or looking to enhance your product’s user experience? Let's collaborate!  
-      Whether you need a polished UI, a smooth user journey, or a full redesign, I’m here to help.  
-      Let’s craft something exceptional together. Reach out at:
-  </p>
+    <div class="skill-group">
+      <div class="skill-label">Graphic Design</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 88%;"></div>
+        <div class="skill-thumb" style="left: 100%;"></div>
+      </div>
+    </div>
 
-  <div class="contact-details">
-      <p><i class="fas fa-phone"></i> +91 9737633778</p>
-      <p><i class="fas fa-envelope"></i> devyaniauz@gmail.com</p>
-      <p><i class="fab fa-linkedin"></i> LinkedIn, Behance</p>
-  </div>
-
-  <div class="social-icons">
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:devyaniauz@gmail.com"><i class="fas fa-envelope"></i></a>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>Devyani Mukherjee © 2025</p>
-</footer>
+    <!-- Services Section -->
+    <section class="services">
+    <section id="services">
+  <h2 class="text-3xl font-bold mb-10 text-center relative inline-block mx-auto">
+    Services
+    <span class="underline-accent"></span>
+  </h2>
+        <p class="services-intro">
+                        I offer end-to-end UX/UI design services, including user research, wireframing, prototyping, and usability
+            testing to create seamless experiences. My expertise in UI design ensures visually appealing, responsive,
+            and consistent interfaces. I also specialize in product design and redesigns to enhance user engagement.
+            With a strong focus on accessibility and collaboration, I work closely with developers to bring intuitive
+            digital products to life.
+        </p>
+
+        <div class="service-cards">
+            <div class="card">
+                <h4>UX Design –</h4>
+                <p>User research, wireframing, prototyping, and usability testing for seamless experiences.</p>
+            </div>
+            <div class="card">
+                <h4>UI Design –</h4>
+                <p>Visually appealing interfaces, responsive layouts, and design systems.</p>
+            </div>
+            <div class="card">
+                <h4>Product Design –</h4>
+                <p>Web & mobile app design and redesigns for better engagement.</p>
+            </div>
+            <div class="card">
+                <h4>Collaboration –</h4>
+                <p>Developer handoff, accessibility, and inclusive design best practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+<section id="projects">
+  <h2 class="text-3xl font-bold mb-10 text-center relative inline-block mx-auto">
+    Projects
+    <span class="underline-accent"></span>
+  </h2>
+        <div class="project-filters">
+            <button class="active">All</button>
+            <button>UI/UX</button>
+            <button>Web Design</button>
+            <button>App Design</button>
+            <button>Graphic Design</button>
+        </div>
+
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="./Images/WhatsApp Image 2025-05-14 at 08.24.27_e8cd0dc6.jpg" alt="Accessibility Project">
+                <h4>Enhanced Accessibility for visually impaired users in Indian Railways</h4>
+                <p>Problem: Users faced issues in travel accessibility. Solution: Proposing solutions to improve user
+                    journey experiences.</p>
+            </div>
+            <div class="project-card">
+                <img src="./Images/WhatsApp Image 2025-05-14 at 08.25.33_68f8ed38.jpg" alt="Content Writer Project">
+                <h4>Service design for Content Writer</h4>
+                <p>Project description: Understanding service ecosystems for freelance content writers and service
+                    design improvements.</p>
+            </div>
+            <div class="project-card">
+                <img src="./Images/WhatsApp Image 2025-05-14 at 08.26.08_180fe83c.jpg" alt="Tiffin Service Project">
+                <h4>Service design - Tiffin Service</h4>
+                <p>Project description: Redesigning the tiffin service experience for better efficiency and
+                    satisfaction.</p>
+            </div>
+        </div>
+
+        <button class="other-projects-btn">Other Projects</button>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+    <section id="testimonials">
+  <h2 class="text-3xl font-bold mb-10 text-center relative inline-block mx-auto">
+    Testimonials
+    <span class="underline-accent"></span>
+  </h2>
+        <p class="testimonials-intro">
+            Trusted for creating intuitive, user-friendly designs that enhance engagement and usability.
+            See what trainers and colleagues say about our collaborations!
+        </p>
+
+        <div class="testimonial-card">
+            <img src="./Images/Screenshot 2025-05-14 104348.png" alt="User Photo">
+            <blockquote>“Devyani Mukherjee has successfully completed the UX/UI developer trainee at Silver Touch
+                Technologies Ltd.”</blockquote>
+            <p><strong>Company</strong><br>Silver Touch Technologies Ltd</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <section id="contacts">
+  <h2 class="text-3xl font-bold mb-10 text-center relative inline-block mx-auto">
+    Contacts
+    <span class="underline-accent"></span>
+  </h2>
+        <p class="contact-intro">
+            Got a project in mind or looking to enhance your product’s user experience? Let's collaborate!
+            Whether you need a polished UI, a smooth user journey, or a full redesign, I’m here to help.
+            Let’s craft something exceptional together. Reach out at:
+        </p>
+
+        <div class="contact-details">
+            <p><i class="fas fa-phone"></i> +91 9737633778</p>
+            <p><i class="fas fa-envelope"></i> devyaniauz@gmail.com</p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn, Behance</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:devyaniauz@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Devyani Mukherjee © 2025</p>
+    </footer>
 
 </body>
+
 </html>
